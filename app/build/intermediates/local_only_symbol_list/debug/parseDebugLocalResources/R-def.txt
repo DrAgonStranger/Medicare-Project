@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable back1
+drawable back2
+drawable footsteps
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable test
+id HelloWorld
+id Home
+id Test1
+id Test2
+id Test3
+id Test4
+id main
+layout activity_footsteps
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Medicare
+style Theme.Medicare
+xml backup_rules
+xml data_extraction_rules
