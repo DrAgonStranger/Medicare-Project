@@ -1,5 +1,15 @@
 from machine import Pin, I2C
+import bluetooth
+from ble_simple_peripheral import BLESimplePeripheral
 import time
+
+# Create a Bluetooth Low Energy (BLE) object
+ble = bluetooth.BLE()
+# Create an instance of the BLESimplePeripheral class with the BLE object
+sp = BLESimplePeripheral(ble)
+
+# Set the debounce time to 0. Used for switch debouncing
+debounce_time=0
 
 # MPU6050 registers
 MPU6050_ADDR = 0x68
@@ -64,6 +74,14 @@ def main():
         print("Accelerometer X:", accel_x, " Y:", accel_y, " Z:", accel_z)
         print("Gyroscope X:", gyro_x, " Y:", gyro_y, " Z:", gyro_z)
         print("Steps", counter)
+
+        # Check if the BLE connection is established
+        if sp.is_connected():
+            # Create a counter string
+            cnt = counter
+            # Send the counter via BLE
+            sp.send(cnt)
+
         time.sleep(1)
 
 if __name__ == "__main__":
