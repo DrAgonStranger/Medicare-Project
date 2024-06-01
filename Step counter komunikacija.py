@@ -15,12 +15,12 @@ debounce_time=0
 MPU6050_ADDR = 0x68
 PWR_MGMT_1 = 0x6B
 TEMP_OUT_H = 0x41
-ACCEL_XOUT_H = 0x3B
-GYRO_XOUT_H = 0x43
+ACCEL_XOUT_H = 0x43
+GYRO_XOUT_H = 0x3B
 
 # Function to initialize I2C communication
 def init_i2c():
-    i2c = I2C(0, scl=Pin(9), sda=Pin(8), freq=400000)  # Pico's I2C0
+    i2c = I2C(1, scl=Pin(27), sda=Pin(26), freq=400000)  # Pico's I2C1
     return i2c
 
 # Function to write a byte to a register
@@ -67,7 +67,7 @@ def main():
     while True:
         
         accel_x, accel_y, accel_z = read_accel(i2c)
-        if(accel_x != 0 or accel_y != 0 or accel_z != 0):
+        if(abs(accel_x) + abs(accel_y) + abs(accel_z) >= 20000):
             counter+=1
         gyro_x, gyro_y, gyro_z = read_gyro(i2c)
         temp_celsius = read_temp(i2c)
@@ -82,7 +82,7 @@ def main():
             # Send the counter via BLE
             sp.send(cnt)
 
-        time.sleep(1)
+        time.sleep(0.25)
 
 if __name__ == "__main__":
     main()
