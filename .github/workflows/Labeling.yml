@@ -1,8 +1,9 @@
 name: Label Issues
 
 on:
-  issues:
-    types: [opened, edited]
+  push:
+    issues:
+      types: [opened, edited]
 
 jobs:
   triage:
