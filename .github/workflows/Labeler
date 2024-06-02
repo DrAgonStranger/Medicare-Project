@@ -1,6 +1,16 @@
 bug:
   - 'bug'
+  - 'error'
+  - 'failure'
+  - 'issue'
+
 documentation:
+  - 'documentation'
   - 'docs'
+  - 'readme'
+
 feature:
   - 'feature'
+  - 'enhancement'
+  - 'improvement'
+  - 'suggestion'
