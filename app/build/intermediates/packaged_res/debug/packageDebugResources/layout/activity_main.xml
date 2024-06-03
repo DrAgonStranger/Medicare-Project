@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back2"
+    tools:context=".MainActivity"
+    >
+
+    <!-- The title of the home page-->
+    <TextView
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#b16dc7"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:layout_marginTop="12dp"
+        />
+
+    <!-- Grid of cards -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Home"
+        android:layout_margin="20dp"
+        android:columnCount="2"
+        android:rowCount="3" >
+
+        <!-- Top-left card-->
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/Test1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#32a8a6"
+            app:cardCornerRadius="20sp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <!-- alignment of card-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <!-- Card image-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/footsteps"
+                    />
+
+                <!-- Card text image-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Steps"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Top-right card-->
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/Test2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#32a8a6"
+            app:cardCornerRadius="20sp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <!-- alignment of card-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <!-- Card image-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/test"
+                    />
+
+                <!-- Card text image-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test 2"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!--Bottom-left card-->
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/Test3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#32a8a6"
+            app:cardCornerRadius="20sp"
+            app:cardUseCompatPadding="true"
+            >
+
+            <!-- alignment of card-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+                <!-- Card image-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/test"
+                    />
+
+                <!-- Card text image-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test 3"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#fff"
+                    />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bottom-right card-->
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/Test4"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="#32a8a6"
+            app:cardCornerRadius="20sp"
+            app:cardUseCompatPadding="true">
+
+            <!-- alignment of card-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <!-- Card image-->
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/test" />
+
+                <!-- Card text image-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Test 4"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </GridLayout>
+</RelativeLayout>
+
