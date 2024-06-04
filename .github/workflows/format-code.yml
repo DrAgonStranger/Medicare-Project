@@ -1,5 +1,8 @@
 name: Format Code with Black
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [main]
