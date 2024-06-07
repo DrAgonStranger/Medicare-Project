@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/profile_bckg"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/round_button_2"
+        android:src="@drawable/baseline_home_filled_24"
+        android:contentDescription="@string/home_button"
+        android:scaleType="centerInside"
+        app:layout_anchorGravity="top|left" />
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="190dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/name"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginStart="50dp"
+        android:textStyle="bold"
+        android:text="@string/surname"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/email"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/stepGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/step_goal"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:contentDescription="@string/slider_desc"
+        android:value="5000"
+        android:valueFrom="1000"
+        android:valueTo="15000" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:text="@string/account_settings"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp" />
+
+    <Button
+        android:id="@+id/buttonLogOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:backgroundTint="@color/purple_200"
+        android:layout_gravity="center"
+        android:text="@string/log_out"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp" />
+
+</LinearLayout>

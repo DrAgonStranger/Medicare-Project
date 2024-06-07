@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bckg"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/stepapp"
+        />
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/progress_circular"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        app:cpb_background_progressbar_color="#b6bbd8"
+        app:cpb_background_progressbar_width="15dp"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="10000"
+        app:cpb_progressbar_color="#3f51b5"
+        app:cpb_progressbar_width="10dp"
+        app:cpb_round_border="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/newSteps"
+        android:layout_centerInParent="true"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="38sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/totalMax"
+        android:layout_below="@+id/newSteps"
+        android:layout_centerInParent="true"
+        android:text="@string/_10000"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/totalMax"
+        android:layout_centerHorizontal="true"
+        android:text="@string/distance_0_km"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="70dp"/>
+
+    <TextView
+        android:id="@+id/calories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/distance"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calories_0_kcal"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+    <ImageButton
+        android:id="@+id/buttonProfile"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="18dp"
+        android:background="@drawable/round_button"
+        android:src="@drawable/baseline_account_circle_24"
+        android:contentDescription="@string/profile_button"
+        android:scaleType="centerInside"
+        app:layout_anchorGravity="bottom|left" />
+
+    <ImageButton
+        android:id="@+id/buttonNotification"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="18dp"
+        android:background="@drawable/round_button"
+        android:contentDescription="@string/notification_button"
+        android:scaleType="centerInside"
+        android:src="@drawable/baseline_circle_notifications_24"
+        app:layout_anchorGravity="bottom|right" />
+
+
+
+
+</RelativeLayout>
