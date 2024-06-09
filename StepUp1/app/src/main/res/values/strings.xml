@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">StepUp</string>
+    <string name="stepapp">StepApp</string>
+    <string name="_10000">/10000</string>
+    <string name="_0">0</string>
+    <string name="distance_0_km">Distance: 0 km</string>
+    <string name="calories_0_kcal">Calories: 0 kcal</string>
+    <string name="profile">Profile</string>
+    <string name="name">Name:</string>
+    <string name="surname">Surname:</string>
+    <string name="email">Email:</string>
+    <string name="account_settings">Account settings</string>
+    <string name="log_out">Log Out</string>
+    <string name="step_goal">Step goal:</string>
+    <string name="slider_desc">Slide to move</string>
+    <string name="profile_button">Profile button</string>
+    <string name="home_button">Home button</string>
+    <string name="how_to_improve">How to improve...</string>
+    <string name="notification_button">Notification button</string>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/notification_bckg"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/buttonHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="18dp"
+        android:background="@drawable/round_button_2"
+        android:src="@drawable/baseline_home_filled_24"
+        android:contentDescription="@string/home_button"
+        android:scaleType="centerInside"
+        app:layout_anchorGravity="top|left" />
+
+    <TextView
+        android:id="@+id/textViewHowTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="@string/how_to_improve"
+        android:textSize="20sp" />
+
+</LinearLayout>
